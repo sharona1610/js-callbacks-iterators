@@ -2,13 +2,18 @@
 	For Each 2:
 	Use the .forEach iterator to loop over the following array of objects and say how delicious each one is.
  */
- 
+
  var foods = [
   {name: "Pizza", level: "very"},
   {name: "Tacos", level: "mostly"},
   {name: "Cottage Cheese", level: "not very"}
 ];
 
+foods.forEach(print)
+
+function print(val){
+  console.log(val.name, "is", val.level, "delicious");
+}
 // your code here
 
 // The output should be
